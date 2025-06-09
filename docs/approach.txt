@@ -2,6 +2,22 @@ DREAMDWELL ESTATES - APPROACH & IMPROVEMENTS
 
 My approach to building this interface focused on creating something clean, responsive, and user-friendly. I built everything with components that can be easily reused and modified.
 
+DESIGN DECISIONS
+
+While implementing the UI, I made some deliberate decisions that differ from the original mockup:
+
+1. Property Card Layout - I chose a horizontal card layout rather than the more compact vertical cards in some parts of the mockup. This provides better readability and makes it easier to scan property details. It also creates a more consistent UI pattern throughout the application.
+
+2. Filter Implementation - I enhanced the filter UI with more interactive elements and clearer visual feedback when filters are applied. This improves usability by making the current state of filters more obvious to users.
+
+3. Tag Placement - For property tags (House, For Rent), I positioned these consistently on each property card to maintain visual harmony, rather than varying positions shown in different parts of the mockup.
+
+4. Newsletter Section - I implemented the newsletter with a more balanced layout that works better across different screen sizes, improving the mobile experience significantly.
+
+5. Button Consistency - Standardized button styles and hover states throughout the application for a more cohesive feel, rather than following the slightly different button styles in various parts of the mockup.
+
+IMPROVEMENTS FOR FUTURE
+
 A few things I'd improve with more time:
 
 1. The current filtering happens client-side, which is fine for this demo but wouldn't scale well with thousands of properties. I'd move this to the server for a real application.

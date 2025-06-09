@@ -11,4 +11,20 @@ For the UI, I went with a clean, responsive design that works well on both mobil
 
 I added loading skeletons to improve the user experience during data fetching and made sure to handle empty states when filters return no results.
 
-The filtering system uses client-side filtering for this demo, which gives immediate feedback as users adjust their criteria. In a production app with thousands of listings, we'd want to move this to the server side. 
+The filtering system uses client-side filtering for this demo, which gives immediate feedback as users adjust their criteria. In a production app with thousands of listings, we'd want to move this to the server side.
+
+DELIBERATE UI IMPROVEMENTS
+
+I made some intentional design choices that differ from the original mockup to improve usability and consistency:
+
+1. Property Cards - Used a consistent horizontal layout for all property cards to improve readability and emphasize the property details. This also allows for better space utilization on different screen sizes.
+
+2. Filter System - Implemented a more interactive filter bar with clearer visual cues for active states. Added smooth transitions between filter states to provide better feedback to users.
+
+3. Responsive Design - Enhanced the responsive behavior beyond the original design to ensure a seamless experience across devices of all sizes, not just desktop.
+
+4. Typography Hierarchy - Established a more consistent typography system throughout the application to improve readability and information hierarchy.
+
+5. Image Handling - Implemented consistent image aspect ratios and loading states to prevent layout shifts and improve perceived performance.
+
+6. Color Consistency - Maintained a more cohesive color palette throughout the interface to strengthen brand identity and improve visual harmony. 
