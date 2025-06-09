@@ -29,14 +29,16 @@ const PropertyCard = ({ property }: { property: Property }): React.ReactElement 
     <div className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col md:flex-row">
       {/* Property Image with Tags - Left Side */}
       <div className="relative w-full md:w-5/12">
-        {/* Status Tags - Positioned at top right of image */}
-        <div className="absolute top-3 right-3 flex gap-2">
-          <span className="px-3 py-1 bg-white text-gray-700 text-xs font-medium rounded-full shadow-sm">
-            House
-          </span>
-          <span className="px-3 py-1 bg-white text-gray-700 text-xs font-medium rounded-full shadow-sm">
-            For Rent
-          </span>
+        {/* Status Tags - Positioned at top left of image */}
+        <div className="absolute top-3 right-3 flex gap-2 z-10">
+          {property.status.slice(0, 2).map((status, index) => (
+            <span 
+              key={index} 
+              className="px-3 py-1 bg-white text-gray-700 text-xs font-medium rounded-full shadow-sm"
+            >
+              {status}
+            </span>
+          ))}
         </div>
         
         {/* Property Image */}
