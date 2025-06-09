@@ -1,0 +1,9 @@
+AI USAGE DOCUMENTATION
+
+Throughout the development process, AI was used as an assistant for:
+1. Documentation tasks that would otherwise be time-consuming
+2. Providing second opinions on implementation approaches
+3. Suggesting alternative solutions when facing challenges
+4. Offering advice on code organization and structure
+
+All core application development, component creation, styling, and architecture decisions were made independently, with AI only playing a supportive role for auxiliary tasks. The vast majority of the codebase was manually developed without AI assistance. 
