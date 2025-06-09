@@ -8,7 +8,7 @@ import PropertySkeleton from './components/PropertySkeleton';
 import Pagination from './components/Pagination';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
-import { Property, PropertyFilters } from './types';
+import { Property } from './types';
 import listingsData from './data/listings.json';
 
 /**

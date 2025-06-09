@@ -11,6 +11,15 @@ const Navbar = (): React.ReactElement => {
   const heroImageUrl = "https://picsum.photos/seed/realestate-hero/1920/350";
   const [activeTab, setActiveTab] = useState('property');
   
+  /**
+   * Handle tab click to update active tab
+   * 
+   * @param {string} tab - The tab name to set as active
+   */
+  const handleTabClick = (tab: string): void => {
+    setActiveTab(tab);
+  };
+  
   return (
     <header className="w-full bg-cover bg-center h-[180px]" style={{ backgroundImage: `url(${heroImageUrl})` }}>
       <div className="container mx-auto grid grid-cols-3 px-6 py-6 flex justify-between items-center">
@@ -25,19 +34,31 @@ const Navbar = (): React.ReactElement => {
           <nav className="bg-white rounded-full overflow-hidden shadow-md">
             <ul className="flex">
               <li>
-                <Link href="/" className="px-6 py-3 text-gray-700 hover:text-gray-900 block">
+                <a 
+                  href="#" 
+                  onClick={(e) => { e.preventDefault(); handleTabClick('home'); }}
+                  className={`px-6 py-3 ${activeTab === 'home' ? 'text-blue-500' : 'text-gray-700'} hover:text-gray-900 block cursor-pointer`}
+                >
                   Home
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/property" className={`px-6 py-3 ${activeTab === 'property' ? 'text-blue-500' : 'text-white'} block`}>
+                <a 
+                  href="#" 
+                  onClick={(e) => { e.preventDefault(); handleTabClick('property'); }}
+                  className={`px-6 py-3 ${activeTab === 'property' ? 'text-blue-500' : 'text-gray-700'} hover:text-gray-900 block cursor-pointer`}
+                >
                   Property
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/contact" className="px-6 py-3 text-gray-700 hover:text-gray-900 block">
+                <a 
+                  href="#" 
+                  onClick={(e) => { e.preventDefault(); handleTabClick('contact'); }}
+                  className={`px-6 py-3 ${activeTab === 'contact' ? 'text-blue-500' : 'text-gray-700'} hover:text-gray-900 block cursor-pointer`}
+                >
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
