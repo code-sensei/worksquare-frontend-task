@@ -1,0 +1,14 @@
+DREAMDWELL ESTATES - ARCHITECTURE
+
+I built this real estate listings interface using Next.js and React, with Tailwind CSS for styling. The app uses React Hooks (useState, useEffect) for state management since the requirements were straightforward enough not to need Redux.
+
+The project structure is simple:
+- Components like PropertyCard, FilterBar, and Newsletter in the components folder
+- Property data stored in a JSON file
+- TypeScript interfaces to keep everything type-safe
+
+For the UI, I went with a clean, responsive design that works well on both mobile and desktop. The property cards display in a 1-column layout on mobile and 2-column on larger screens.
+
+I added loading skeletons to improve the user experience during data fetching and made sure to handle empty states when filters return no results.
+
+The filtering system uses client-side filtering for this demo, which gives immediate feedback as users adjust their criteria. In a production app with thousands of listings, we'd want to move this to the server side. 

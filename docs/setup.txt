@@ -1,0 +1,26 @@
+DREAMDWELL ESTATES - SETUP
+
+Getting started is simple:
+
+1. Clone the repo and install dependencies:
+   ```
+   git clone <repository-url>
+   cd worksquare
+   npm install
+   ```
+
+2. Run the development server:
+   ```
+   npm run dev
+   ```
+
+3. Open http://localhost:3000 in your browser
+
+I built this with:
+- Next.js/React
+- Tailwind CSS
+- TypeScript
+
+The app loads property data from a JSON file in the data folder. In a real app, this would come from an API.
+
+All the visual components are in the components folder, and I've used Lorem Picsum for the property images with consistent seeds to maintain the same images between refreshes. 
