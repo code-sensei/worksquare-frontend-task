@@ -24,7 +24,6 @@ Build a housing listings interface using any modern frontend framework. Your goa
 * Load data from a provided `listings.json` file
 * Display listings in a responsive card/grid layout
 * Implement filters or search based on:
-
   * Location
   * Property Type
 * Use functional components and hooks (if using React)

@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --blue-primary: #0070f3;
+  --white: #ffffff;
+  --gray-light: #f5f5f5;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.property-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn {
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.active-tab {
+  background-color: var(--blue-primary);
+  color: white;
+}
+
+.pagination-btn {
+  transition: all 0.2s ease;
+}
+
+.pagination-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.active-page {
+  background-color: var(--blue-primary);
+  color: white;
+}
